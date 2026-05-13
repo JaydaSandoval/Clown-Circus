@@ -318,3 +318,6 @@ To Implement in this code:
     </html>
 ```
 ### Known Issues/Improvements: 
+- Transitional Screen Changes
+- Responsive Webpage
+- Lack of Smoothness
