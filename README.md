@@ -210,3 +210,111 @@ function updateInstruction(text) {
 ## Implementation
 To Implement in this code: 
 
+1. HTML Menu File with:
+- A menu screen with:
+  - Play Button
+  - Instructions PopUp
+- A game screens with:
+  1. Level One
+     - Guess the Rabbit location
+  2. Level Two
+     - Drag and Drop
+  3. Level Three
+     - Drag and Drop Part Two
+  4. Ending Page
+     - Reset Button
+2. The JavaScript provided above
+3. Optional CSS for styling
+
+### Example of HTMl Structure
+```html
+  <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Circus Clowns</title>
+        <script src="script.js" defer></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!-- Homepage -->
+        <div id="homepage" class="screen visible">
+            <img src="welcome-page.png" class="hero-img" alt="Background">
+
+            <button id="playBtn" class="menu-btn">Play</button>
+            <button id="instructionsBtn" class="menu-btn">Instructions</button>
+        </div>
+
+        <!-- Level One -->
+        <div id="levelOne" class="screen">
+            <img src="clowntable.jpg" class="level1img" alt="background">
+            <div id="boxesContainer">
+                <div class="box" data-id="0">
+                    <img src="bunny.png">
+                </div>
+                <div class="box" data-id="1">
+                    <img src="bunny.png">
+                </div>
+                <div class="box" data-id="2">
+                    <img src="bunny.png">
+                </div>
+            </div>
+        </div>
+        <div id="wrongPopup" class="wrong-popup hidden">
+            <div class="wrong-popup-content">
+                <p>No Bunny in Here!</p>
+                <button class="wrong-close" id="wrongCloseBtn">Close</button>
+            </div>
+        </div>
+
+<!--Levelthree- -skipped over two -->
+       <div id="levelThree" class="screen">
+        <img src="spotlight.webp" class="levelthreeimg">
+        <div class="thirdlevel">
+            <div id="keyBoxesContainer">
+                <div class="keyBox bottom-left"></div>
+                <div class="keyBox bottom-right"></div>
+            </div>
+        </div>
+            <div id="drop-zone">Drop Key Here</div>
+        </div>
+
+<!--Leavel four-->
+        <div id="levelFour" class="screen">
+            <img src="doors.jpg" class="doorbg">
+            <div id="sideKeyBox" class="side-box">
+                <img id="level4Key" src="key.webp" draggable="true" class="key">
+            </div>
+            <div id="bigDropZone" class="big-drop-zone"></div>
+        </div>
+
+<!--ending level-->
+        <div id="levelFive" class=" level5-bg screen">
+            <img src="escape.jpg" class="endingLevel">
+            <button id="resetBtn" class="reset-button">Reset Game</button>
+        </div>
+
+
+        <!-- Instructions Popup -->
+        <div id="instructionsPopup" class="popup hidden">
+            <div class="popup-content">
+            <h2 style="text-decoration: underline;"><strong>Instructions</strong></h2>
+            <p>1. Enter the Circus</p>
+            <p>2. Solve Each Puzzle</p>
+            <p>3. Find the Key</p>
+            <p>4. Escape the Game!</p>
+            <button id="closePopup">Close</button>
+            </div>
+        </div>
+
+        <!--Instructions Tab-->
+        <div id="instructionTab" class="textTab"></div>
+
+        <!-- Fade overlay -->
+        <div id="fadeOverlay"></div>
+
+    </body>
+    </html>
+```
+### Known Issues/Improvements: 
