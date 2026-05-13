@@ -18,4 +18,21 @@ A browser-based mini app that is a puzzle game inlcuding the theme of the circus
 ## Code Overview
 This code contains the important following functions: 
 
-### 1. 
+### 1. Play Function with Fade
+
+```javaScript
+playBtn.addEventListener("click", () => {
+    updateInstruction("Find the bunny in the three hats!"); //INSTRUCTION TAB
+    showInstruction();  //SHOW TAB HERE
+
+    fadeOverlay.style.opacity = 1;
+    //fADEOVERLAY SET
+    setTimeout(() => {
+        homepage.classList.remove("visible");
+        levelOne.classList.add("visible");
+        fadeOverlay.style.opacity = 0;
+    }, 600);
+    });
+```
+
+### 2. 
