@@ -15,4 +15,7 @@ A browser-based mini app that is a puzzle game inlcuding the theme of the circus
 - Once you place the key to the last door you escape
 - May reset game repeatedly
 
-##
+## Code Overview
+This code contains the important following functions: 
+
+### 1. 
