@@ -148,7 +148,7 @@
     });
     }
 
-    // -------- LEVEL FOUR --------
+//LEVEL FOUR
     function setupLevelFour() {
     updateInstruction("Unlock the door with the key!");
     showInstruction();   // ← TAB VISIBLE DURING LEVEL 4
